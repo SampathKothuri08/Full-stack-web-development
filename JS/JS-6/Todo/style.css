@@ -33,3 +33,9 @@ h3 {
     margin: auto;
 
 }
+
+.task{
+    display: flex;
+    justify-content: space-evenly;
+}
+

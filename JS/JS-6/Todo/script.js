@@ -19,8 +19,19 @@ const inputHandler = function () {
 
     const deleteBtn = taskElem.children[1];
 
+    const editBtn = taskElem.children[2];
     deleteBtn.addEventListener("click", function () {
         taskElem.remove();
+    })
+
+
+    editBtn.addEventListener("click", function(){
+        const newText = prompt("Enter a new task");
+        if(newText.length==0){
+            return;
+        }
+        const data = taskElem.children[0];
+        data = newText;
     })
 }
 
@@ -30,9 +41,17 @@ function createTask(newTask) {
     const button = document.createElement("button");
     button.innerText = "Delete";
     li.textContent = newTask;
-
+    div.className = "task";
+    const edit = document.createElement("button");
+    edit.textContent = "Edit"; 
+    button.style.margin = "10px";
+    li.style.margin = "10px";
+    edit.style.margin = "10px";
     div.appendChild(li);
     div.appendChild(button);
+    div.appendChild(edit);
+
+    
     return div;
 
 
@@ -40,11 +59,5 @@ function createTask(newTask) {
 
 button.addEventListener("click", inputHandler);
 
-// const secondBtn = document.querySelector(".second");
-
-// secondBtn.addEventListener("click", function () {
-//     const name = prompt("What is your name");
-//     console.log("name", name);
-// })
 
 

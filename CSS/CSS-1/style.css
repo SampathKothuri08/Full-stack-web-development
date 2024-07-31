@@ -1,0 +1,31 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span{
+    color: red;
+}
+.para.some{
+     background-color: black;
+     font-size: 40px;
+     font-family: sans-serif, 'Times New Roman';
+
+}
+
+.some{
+    font-style: italic;
+    color: red;
+}
+
+.para{
+    text-decoration: underline;
+    color: cadetblue;
+}
+
+#unique{
+   color: purple;
+   line-height: 100px;
+}
+input[placeholder="nickname"]{
+    border: 3px solid blue;;
+}

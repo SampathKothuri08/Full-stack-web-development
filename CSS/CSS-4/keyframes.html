@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0px;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        height: 500px;
+        width: 500px;
+        background-color: slategray;
+        border: 1px soldi black;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        position: relative;
+       animation: rotate-bg 3s infinite linear;
+
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: hotpink;
+        position: relative;
+        top: 0px;
+        left: 0px;
+
+        animation-name: shape-changer;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-name: box-mover;
+        
+        animation-direction: alternate;
+
+
+    }
+
+   
+
+    @keyframes box-mover{
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+
+        33%{
+            top: 100%;
+            left: 0px;
+            transform: translateY(-100%);
+        }
+        50%{
+            border-radius: 50%;
+        }
+
+        66%{
+            top: 100%;
+            left: 100%;
+            transform: translate(-100%,-100%);
+        }
+
+        100%{
+            top: 0px;
+            left: 100%;
+            transform: translateX(-100%);
+            background-color: orange;
+        }
+        
+    }
+
+    @keyframes rotate-bg {
+
+     to{
+      transform:rotate(360deg);
+     }
+     100%{
+        opacity:1;
+     }
+}
+</style>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

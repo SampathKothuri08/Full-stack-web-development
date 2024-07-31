@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+}
+
+body{
+   margin: 0px;
+}
+
+.first:hover{
+    background-color: red;
+    width: 400px;
+    transform: rotate(60deg);
+
+}
+.second:hover{
+    background-color: palegreen;
+    width: 300px;
+}
+
+.third:hover{
+    background-color: chocolate;
+    width: 600px;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    
+    
+}
+
+.first{
+    background-color: blue;
+    transition-duration: 3s;
+    transition-timing-function:ease;
+    transition-property: width,background-color,rotate;
+}
+.second{
+    background-color: blueviolet;
+    transition-duration: 3s;
+}
+.third{
+    background-color: aqua;
+    transition-duration: 3s;
+}
+</style>
+<body>
+    <div class="box first"></div>
+    <div class="box second"></div>
+    <div class="box third"></div>
+</body>
+</html> 
+

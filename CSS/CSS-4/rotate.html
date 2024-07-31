@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+      *{
+        box-sizing: border-box;
+      }
+
+      body{
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0px;
+      }
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            margin-bottom: 2px;
+            transition-duration: 3s;
+        }
+        .first{
+            background-color: purple;
+        }
+        .second{
+            background-color: blue;
+        }
+        .third{
+            background-color: aqua;
+        }
+
+        .first:hover{
+            transform: translateX(50%);
+        }
+
+        .second:hover{
+            transform: translateY(75%);
+        }
+
+        .third:hover{
+            transform: translate(50%,50%);
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Rotate</h2>
+    <div class="box first"></div>
+    <div class="box second" ></div>
+    <div class="box third"></div>
+</body>
+</html>

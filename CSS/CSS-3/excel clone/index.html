@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0px;
+    }
+    .menu{
+        height: 100px;
+        border: 1px solid black;
+        background-color: palegreen;
+    }
+    .formula{
+        height: 50px;
+        border: 1px solid black;
+        background-color: aqua;
+    }
+    .grid{
+        /* height: calc(100vh - 200px); */
+        background-color: white;
+        border: 1px solid black;
+        overflow-y: auto;
+    }
+    .sheet{
+        height: 50px;
+        border: 1px solid black;
+        background-color: brown;
+    }
+
+    .firstrow{
+         display: flex; 
+    }
+    .topleft{
+         /* height: 100%; */
+        width: 4rem;
+        border: 1px solid black;
+        text-align: center;
+
+    }
+    
+   .cell{
+    width: 4rem;
+    border: 1px solid black;
+    text-align: center;
+   }
+   .alphabets{
+    display: flex;
+   }
+   .insertrows{
+    display: flex; 
+     flex-direction: column;
+   }
+   
+</style>
+<body>
+        <div class="menu"></div>
+        <div class="formula"></div>
+        <div class="grid">
+            <div class="firstrow">
+                <div class="topleft"></div>
+                <div class="alphabets">
+                    <div class="cell">A</div>
+                    <div class="cell">B</div>
+                    <div class="cell">C</div>
+                    <div class="cell">D</div>
+                    <div class="cell">E</div>
+                    <div class="cell">F</div>
+                    <div class="cell">G</div>
+                    <div class="cell">H</div>
+                    <div class="cell">I</div>
+                    <div class="cell">J</div>
+                    <div class="cell">K</div>
+                    <div class="cell">L</div>
+                    <div class="cell">M</div>
+                    <div class="cell">N</div>
+                    <div class="cell">O</div>
+                    <div class="cell">P</div>
+                    <div class="cell">Q</div>
+                    <div class="cell">R</div>
+                    <div class="cell">S</div>
+                    <div class="cell">T</div>
+                    </div>
+            </div>
+
+            <div class="insertrows">
+            
+            </div>
+        </div>
+        <div class="sheet"></div>
+
+        <script src="script.js"></script>
+</body>
+</html>

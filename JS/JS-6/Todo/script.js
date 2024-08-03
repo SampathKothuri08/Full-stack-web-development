@@ -31,7 +31,7 @@ const inputHandler = function () {
             return;
         }
         const data = taskElem.children[0];
-        data = newText;
+        data.textContent = newText;
     })
 }
 
